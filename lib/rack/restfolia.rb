@@ -1,4 +1,5 @@
 require "rack/restfolia/version"
+require "rack/restfolia/middleware"
 
 module Rack
   module Restfolia

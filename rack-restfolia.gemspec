@@ -14,4 +14,10 @@ Gem::Specification.new do |gem|
   gem.name          = "rack-restfolia"
   gem.require_paths = ["lib"]
   gem.version       = Rack::Restfolia::VERSION
+  
+  gem.add_dependency 'restfolia'
+
+  gem.add_development_dependency 'rspec' 
+  gem.add_development_dependency 'rack-test' 
+  gem.add_development_dependency 'webmock' 
 end
