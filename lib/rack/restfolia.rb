@@ -1,5 +1,7 @@
 require "rack/restfolia/version"
+require "rack/restfolia/monkey_patch"
 require "rack/restfolia/middleware"
+require "rack/restfolia/cache"
 
 module Rack
   module Restfolia

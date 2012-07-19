@@ -1,7 +1,16 @@
 module Rack
   module Restfolia
-    module Middleware
-      
+    class Middleware
+      def initialize(app)
+        @app = app
+      end
+
+      def call(env)
+        Cache.start
+        response = @app.call(env)
+        Cache.clear
+        response
+      end
     end
   end
 end
