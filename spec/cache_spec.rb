@@ -15,7 +15,7 @@ describe Rack::Restfolia::Cache do
     end
     it { should be_nil }
   end
-  
+
   context 'clear storage' do
     subject { Rack::Restfolia::Cache.get('http://www.example.com') }
     before do
